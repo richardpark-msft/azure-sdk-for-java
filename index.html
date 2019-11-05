@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure SDK for Java | Azure SDK for Java </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure SDK for Java | Azure SDK for Java ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="navtoc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-sdk-for-java">Azure SDK for Java</h1>
+
+<p><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=17"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/17?branchName=master" alt="Build Status"></a> <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-java/index.html"><img src="https://img.shields.io/badge/documentation-published-blue.svg" alt="Build Documentation"></a> <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-java/staging/dependencies.html"><img src="https://img.shields.io/badge/dependencies-analyzed-blue.svg" alt="Dependencies"></a> <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-java/staging/spotbugsXml.html"><img src="https://img.shields.io/badge/SpotBugs-Clean-success.svg" alt="SpotBugs"></a> <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-java/staging/checkstyle-aggregate.html"><img src="https://img.shields.io/badge/CheckStyle-Clean-success.svg" alt="CheckStyle"></a></p>
+<p>This repository contains official Java libraries for Azure services. For reference documentation go to <a href="http://aka.ms/java-docs">Azure SDK for Java documentation</a>, and tutorials, samples, quick starts and other documentation, go to <a href="https://docs.microsoft.com/java/azure/">Azure for Java Developers</a>.</p>
+<p>You can find a complete list of all the packages for these libraries <a href="packages.md">here</a>.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To get started with a specific library, see the <strong>README.md</strong> file located in the library's project folder. You can find service libraries in the <code>/sdk</code> directory.</p>
+<p>For tutorials, samples, quick starts and other documentation, visit <a href="https://docs.microsoft.com/java/azure/">Azure for Java Developers</a>.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Java 8 or later is required to use the November 2019 client libraries, otherwise Java 7 or later is required.</p>
+<h2 id="packages-available">Packages available</h2>
+<p>Each service might have a number of libraries available from each of the following categories:</p>
+<ul>
+<li><a href="#Client-November-2019-Release">Client - November 2019 Release</a></li>
+<li><a href="#Client-Stable">Client - Stable</a></li>
+<li><a href="#Management">Management</a></li>
+</ul>
+<h3 id="client-november-2019-ga-release">Client: November 2019 GA Release</h3>
+<p>Following packages that we are currently releasing in <strong>GA</strong>. These libraries follow the <a href="https://azure.github.io/azure-sdk/java/guidelines/">Azure SDK Design Guidelines for Java</a> and share a number of core features such as HTTP retries, logging, transport protocols, authentication protocols, etc., so that once you learn how to use these features in one client library, you will know how to use them in other client libraries. You can learn about these shared features <a href="core">here</a>.</p>
+<p>These libraries can be easily identified by their folder, package, and namespaces names starting with <code>azure-</code>, e.g. <code>azure-keyvault</code>.</p>
+<p>The libraries released in the November 2019 GA release:</p>
+<ul>
+<li><a href="sdk/identity/azure-identity/README.md">Identity</a></li>
+<li><a href="sdk/keyvault/azure-security-keyvault-keys/README.md">Key Vault Keys</a></li>
+<li><a href="sdk/keyvault/azure-security-keyvault-secrets/README.md">Key Vault Secrets</a></li>
+<li><a href="sdk/storage/azure-storage-blob/README.md">Storage Blobs</a></li>
+<li><a href="sdk/storage/azure-storage-blob-batch/README.md">Storage Blobs Batch</a></li>
+<li><a href="sdk/storage/azure-storage-blob-cryptography/README.md">Storage Blobs Cryptography</a></li>
+<li><a href="sdk/storage/azure-storage-queue/README.md">Storage Queues</a></li>
+</ul>
+<h3 id="client-november-2019-preview-release">Client: November 2019 Preview Release</h3>
+<p>The libraries released in the November GA November 2019 preview:</p>
+<ul>
+<li><a href="sdk/appconfiguration/azure-data-appconfiguration/README.md">App Configuration</a></li>
+<li><a href="sdk/eventhubs/azure-messaging-eventhubs/README.md">Event Hubs</a></li>
+<li><a href="sdk/eventhubs/azure-messaging-eventhubs-checkpointstore-blob/README.md">Event Hubs Checkpoint Store</a></li>
+<li><a href="sdk/storage/azure-storage-file-share/README.md">Storage File Shares</a></li>
+<li><a href="sdk/keyvault/azure-security-keyvault-certificates/README.md">Key Vault Certificates</a></li>
+<li><a href="sdk/core/azure-core-tracing-opencensus/README.md">azure-core-tracing-opencensus</a></li>
+</ul>
+<blockquote>
+<p>NOTE: If you need to ensure your code is ready for production, use one of the stable libraries.</p>
+</blockquote>
+<h3 id="client-stable">Client: Stable</h3>
+<p>Last stable versions of packages that have been provided for usage with Azure and are production-ready. These libraries provide similar functionalities to the preview libraries, as they allow you to use and consume existing resources and interact with them, for example: upload a blob. Stable library directories start with <code>microsoft-azure-</code>, e.g. <code>microsoft-azure-keyvault</code>.</p>
+<h3 id="management">Management</h3>
+<p>Libraries which enable you to provision specific resources. They are responsible for directly mirroring and consuming Azure service's REST endpoints. Management library directories contain <code>-mgmt-</code>, e.g. <code>azure-mgmt-keyvault</code>.</p>
+<h2 id="need-help">Need help?</h2>
+<ul>
+<li>For reference documentation visit the <a href="http://aka.ms/java-docs">Azure SDK for Java documentation</a>.</li>
+<li>For tutorials, samples, quick starts and other documentation, visit <a href="https://docs.microsoft.com/java/azure/">Azure for Java Developers</a>.</li>
+<li>For build reports on code quality, test coverage, etc, visit <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-java/index.html">Azure Java SDK</a>.</li>
+<li>File an issue via <a href="https://github.com/Azure/azure-sdk-for-java/issues/new/choose">Github Issues</a>.</li>
+<li>Check <a href="https://stackoverflow.com/questions/tagged/azure-java-sdk">previous questions</a> or ask new ones on StackOverflow using <code>azure-java-sdk</code> tag.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>For details on contributing to this repository, see the <a href="CONTRIBUTING.md">contributing guide</a>.</p>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-java%2FREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Java
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
